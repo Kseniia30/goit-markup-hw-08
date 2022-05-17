@@ -1,0 +1,46 @@
+.header-contacts {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.header-contacts__item {
+    display: flex;
+    margin-right: 30px;
+
+        &:last-child {
+        margin-right: 0;
+        }
+}
+.header-contacts__link {
+    font-family: $main-font;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: $second-text-color;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover, &:focus {
+            color: $link;
+        }
+}
+.header-contacts__icon {
+    margin-right: 10px;
+    fill: currentColor;
+
+        &--mail {
+            width: 16px;
+            height: 12px;
+        }
+
+        &--phone {
+            width: 10px;
+            height: 16px;
+        }
+}

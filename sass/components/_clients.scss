@@ -1,0 +1,33 @@
+.clients__top-text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-text-color;
+    margin-bottom: 50px;
+}
+.clients__list {
+    display: flex;
+}
+.clients__item {
+    margin-right: 30px;
+    text-align: center;
+}
+.clients__icon {
+    width: 170px;
+    height: 92px;
+    fill: $iconcolor;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: 1px solid $border-three;
+    transition-property: fill, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover, &:focus {
+            fill: $link;
+            fill-opacity: 1;
+            border: 1px solid $link;
+        }
+}

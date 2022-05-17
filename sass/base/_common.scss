@@ -1,0 +1,17 @@
+body {
+    font-family: $main-font;
+    background-color: $main;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
