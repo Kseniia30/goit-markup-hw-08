@@ -8,7 +8,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 img {
     max-width: 100%;
+    display: block;
+    height: auto;
 }
 button {
     cursor: pointer;
+}
+a {
+    text-decoration: none;
+    font-style: normal;
 }

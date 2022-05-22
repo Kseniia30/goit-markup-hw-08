@@ -1,41 +1,47 @@
 .team__contact-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
 }
+
 .team__contact-item {
+
+    &:hover,
+    &:focus {
+        border: 1px solid $dark;
+
+        @media screen and (min-width: 768px) {
+            border: none;
+        }
+    }
+}
+
+.team__contact-link {
+    display: block;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    margin-right: 10px;
-    text-align: center;
-    transition-property: background-color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover, &:focus {
-            background-color: $link;
-            opacity: 1;
-            fill: $main;
-        }
-}
-.team__contact-link {
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team__contact-icon {
-    text-align: center;
-    width: 44px;
-    height: 44px;
     padding: 12px;
-    fill: $iconcolor;
-    transition-property: fill;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:hover, &:focus {
-            fill: $main;
-            opacity: 1;
+
+    &:hover,
+    &:focus {
+        background-color: $main;
+
+        @media screen and (min-width: 768px) {
+            background-color: $link;
         }
+    }
+}
+
+.team__contact-icon {
+    width: 20px;
+    height: 20px;
+    fill: $iconcolor;
+}
+.team__contact-link:hover .team__contact-icon, 
+.team__contact-link:focus .team__contact-icon {
+    fill: $main;
 }

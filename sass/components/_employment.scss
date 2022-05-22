@@ -1,6 +1,11 @@
 .employment {
-    padding-top: 0;
+    display: none;
+    @media screen and (min-width: 1200px) {
+        display: block;
+        padding-top: 0;
+    }
 }
+
 .employment__top-text {
     color: $main-text-color;
     font-weight: 700;
@@ -10,19 +15,23 @@
     margin-bottom: 50px;
     margin-top: 0;
 }
+
 .employment__list {
     display: flex;
     justify-content: space-between;
     padding: 0;
 }
+
 .employment__item {
     position: relative;
 }
+
 .employment__img {
     max-width: 100%;
     display: block;
     height: auto;
 }
+
 .employment__text {
     position: absolute;
     width: 100%;

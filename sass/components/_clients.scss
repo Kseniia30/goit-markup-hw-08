@@ -1,33 +1,63 @@
+.clients {}
+
 .clients__top-text {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: $main-text-color;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
+
 .clients__list {
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+    margin-right: -30px;
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
 }
+
 .clients__item {
+    margin-bottom: 30px;
     margin-right: 30px;
-    text-align: center;
+    width: calc(100% / 2 - 30px);
+    @media screen and (min-width: 768px) {
+        width: calc(100% / 3 - 30px);
+    }
+    @media screen and (min-width: 1200px) {
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
+
+.clients__link {}
+
 .clients__icon {
-    width: 170px;
+    width: 210px;
     height: 92px;
     fill: $iconcolor;
-    padding: 16px 32px;
+    padding: 16px 52px;
     border-radius: 4px;
     border: 1px solid $border-three;
     transition-property: fill, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover, &:focus {
+        fill: $link;
+        fill-opacity: 1;
+        border: 1px solid $link;
+    }
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
 
-        &:hover, &:focus {
-            fill: $link;
-            fill-opacity: 1;
-            border: 1px solid $link;
-        }
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
 }

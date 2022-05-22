@@ -1,0 +1,45 @@
+.address-div {
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: auto;
+        margin-left: 0;
+    }
+}
+
+.address {
+    margin-top: 20px;
+    font-style: normal;
+}
+
+.address__list {}
+
+.address__item {
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+}
+
+.address__location {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main;
+}
+
+.address__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    &:hover, &:focus {
+        color: $link;
+    }
+}

@@ -79,11 +79,16 @@
 }
 .modal-check {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 1.67;
     letter-spacing: 0.03em;
     color: $second-text-color;
     margin-top: 0;
+    
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 .modal-check__span {
     display: flex;
@@ -121,11 +126,15 @@
 }
 .modal-check__contract-conditions {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 1.67;;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: $link;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 .sent-btn {
     font-weight: 700;

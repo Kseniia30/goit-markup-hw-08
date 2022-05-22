@@ -14,26 +14,61 @@
 <body>
     <header class="header">
         <div class="header__container container">
+            <a href="" class="logo header__logo">Web<span class="logo--dark">Studio</span></a>
             <nav class="header_nav">
-                <a href="" class="logo header__logo">Web<span class="logo--dark">Studio</span></a>
                 <ul class="site-navigation">
-                    <li class="site-navigation__item"><a href="index.html" class="site-navigation__link ">Студия</a></li>
-                    <li class="site-navigation__item"><a href="portfolio.html" class="site-navigation__link site-navigation__link--active">Портфолио</a></li>
+                    <li class="site-navigation__item"><a href="index.html"
+                            class="site-navigation__link ">Студия</a></li>
+                    <li class="site-navigation__item"><a href="portfolio.html" class="site-navigation__link site-navigation__link--active">Портфолио</a>
+                    </li>
                     <li class="site-navigation__item"><a href="" class="site-navigation__link">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="header-contacts">
                 <li class="header-contacts__item"><a href="info@devstudio.com" class="header-contacts__link">
-                    <svg class="header-contacts__icon header-contacts__icon--mail">
-                        <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com</a></li>
+                        <svg class="header-contacts__icon header-contacts__icon--mail">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a></li>
                 <li class="header-contacts__item"><a href="+380961111111" class="header-contacts__link">
-                    <svg class="header-contacts__icon header-contacts__icon--phone">
-                        <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11</a></li>
+                        <svg class="header-contacts__icon header-contacts__icon--phone">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a></li>
             </ul>
+            <button type="button" class="mobile-menu__btn js-open-menu" aria-expanded="false">
+                <svg class="mobile-menu__icon">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div class="js-menu-container is-open">
+                <button type="button" class="mobile-menu__btn js-close-menu">
+                    <svg class="mobile-menu__icon">
+                        <use href="./images/icons.svg#icon-close_header"></use>
+                    </svg>
+                </button>
+                <nav class="mob_nav">
+                    <ul class="mob-navigation">
+                        <li class="mob-navigation__item"><a href="index.html"
+                                class="mob-navigation__link ">Студия</a></li>
+                        <li class="mob-navigation__item"><a href="portfolio.html" class="mob-navigation__link mob-navigation__link--active">Портфолио</a>
+                        </li>
+                        <li class="mob-navigation__item"><a href="" class="mob-navigation__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="mob-contacts">
+                    <li class="mob-contacts__item"><a href="maiilto:info@devstudio.com"
+                            class="mob-contacts__link">info@devstudio.com</a></li>
+                    <li class="mob-contacts__item"><a href="tel:+380961111111" class="mob-contacts__link">+38 096 111 11
+                            11</a></li>
+                </ul>
+                <ul class="mobile-contact__list">
+                    <li class="mobile-contact__item"><a href="" class="mobile-contact__link">Instagram</a></li>
+                    <li class="mobile-contact__item"><a href="" class="mobile-contact__link">Twitter</a></li>
+                    <li class="mobile-contact__item"><a href="" class="mobile-contact__link">Facebook</a></li>
+                    <li class="mobile-contact__item"><a href="" class="mobile-contact__link">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <main class="section">
@@ -43,14 +78,22 @@
                     <li class="portfolio-buttons__item"><button type="button" class="portfolio-buttons__btn portfolio-buttons__btn--active">Все</button></li>
                     <li class="portfolio-buttons__item"><button type="button" class="portfolio-buttons__btn">Веб-сайты</button></li>
                     <li class="portfolio-buttons__item"><button type="button" class="portfolio-buttons__btn">Приложения</button></li>
-                    <li><button type="button" class="portfolio-buttons__btn">Дизайн</button></li>
-                    <li><button type="button" class="portfolio-buttons__btn">Маркетинг</button></li>
+                    <li class="portfolio-buttons__item"><button type="button" class="portfolio-buttons__btn">Дизайн</button></li>
+                    <li class="portfolio-buttons__item"><button type="button" class="portfolio-buttons__btn">Маркетинг</button></li>
                 </ul>
                 <ul class="portfolio-menu">
                     <li class="portfolio-menu__item">
                         <a href="" class="portfolio-menu__link">
                             <div class="portfolio-menu__overlay">
-                                <img src="images2/1.jpg" alt="Технокряк" width="370" height="294" class="portfolio-menu__img">
+                                <picture class="portfolio-menu__img">
+                                    <source srcset="./images2/1.jpg 1x, ./images2/1-2x-min.jpg 2x" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 270px, 100vw" />
+                                    <source srcset="./images2/1-tablet-min.jpg 1x, ./images2/1-tablet-2x-min.jpg 2x"
+                                        media="(min-width: 768px)" sizes="(min-width: 768px) 354px, 100vw" />                                    
+                                    <source srcset="./images2/1-mob-min.jpg 1x, ./images2/1-mob-2x-min.jpg 2x"
+                                        media="(min-width: 480px)" sizes="(min-width: 480px) 450px, 100vw" />
+                                    <img src="./images2/1.jpg" alt="Технокряк" />
+                                </picture>
                                 <p class="portfolio-menu__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p> 
                             </div>
                             <div class="portfolio-menu__text-div">                               
@@ -62,7 +105,15 @@
                     <li class="portfolio-menu__item">
                         <a href="" class="portfolio-menu__link">
                             <div class="portfolio-menu__overlay">
-                                <img src="images2/2.jpg" alt="Постер" width="370" height="294" class="portfolio-menu__img">
+                                <picture class="portfolio-menu__img">
+                                    <source srcset="./images2/2.jpg 1x, ./images2/2-2x-min.jpg 2x" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 270px, 100vw" />
+                                    <source srcset="./images2/2-tablet-min.jpg 1x, ./images2/2-tablet-2x-min.jpg 2x" media="(min-width: 768px)"
+                                        sizes="(min-width: 768px) 354px, 100vw" />
+                                    <source srcset="./images2/2-mob-min.jpg 1x, ./images2/2-mob-2x-min.jpg 2x" media="(min-width: 480px)"
+                                        sizes="(min-width: 480px) 450px, 100vw" />
+                                    <img src="./images2/2.jpg" alt="Постер" />
+                                </picture>
                                 <p class="portfolio-menu__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p> 
                             </div>                            
                             <div class="portfolio-menu__text-div">
@@ -74,7 +125,15 @@
                     <li class="portfolio-menu__item">
                         <a href="" class="portfolio-menu__link">
                             <div class="portfolio-menu__overlay">
-                                <img src="images2/3.jpg" alt="Ресторан" width="370" height="294" class="portfolio-menu__img">
+                                <picture class="portfolio-menu__img">
+                                    <source srcset="./images2/3.jpg 1x, ./images2/3-2x-min.jpg 2x" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 270px, 100vw" />
+                                    <source srcset="./images2/3-tablet-min.jpg 1x, ./images2/3-tablet-2x-min.jpg 2x" media="(min-width: 768px)"
+                                        sizes="(min-width: 768px) 354px, 100vw" />
+                                    <source srcset="./images2/3-mob-min.jpg 1x, ./images2/3-mob-2x-min.jpg 2x" media="(min-width: 480px)"
+                                        sizes="(min-width: 480px) 450px, 100vw" />
+                                    <img src="./images2/3.jpg" alt="Ресторан" />
+                                </picture>
                                 <p class="portfolio-menu__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p> 
                             </div>                            
                             <div class="portfolio-menu__text-div">
@@ -86,7 +145,15 @@
                     <li class="portfolio-menu__item">
                         <a href="" class="portfolio-menu__link">
                             <div class="portfolio-menu__overlay">
-                                <img src="images2/4.jpg" alt="Проект" width="370" height="294" class="portfolio-menu__img">
+                                <picture class="portfolio-menu__img">
+                                    <source srcset="./images2/4.jpg 1x, ./images2/4-2x-min.jpg 2x" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 270px, 100vw" />
+                                    <source srcset="./images2/4-tablet-min.jpg 1x, ./images2/4-tablet-2x-min.jpg 2x" media="(min-width: 768px)"
+                                        sizes="(min-width: 768px) 354px, 100vw" />    
+                                    <source srcset="./images2/4-mob-min.jpg 1x, ./images2/4-mob-2x-min.jpg 2x" media="(min-width: 480px)"
+                                        sizes="(min-width: 480px) 450px, 100vw" />
+                                    <img src="./images2/4.jpg" alt="Проект" />
+                                </picture>
                                 <p class="portfolio-menu__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p> 
                             </div>                            
                             <div class="portfolio-menu__text-div">
@@ -98,7 +165,15 @@
                     <li class="portfolio-menu__item">
                         <a href="" class="portfolio-menu__link">
                             <div class="portfolio-menu__overlay">
-                                <img src="images2/5.jpg" alt="Проект" width="370" height="294" class="portfolio-menu__img">
+                                <picture class="portfolio-menu__img">
+                                    <source srcset="./images2/5.jpg 1x, ./images2/5-2x-min.jpg 2x" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 270px, 100vw" />
+                                    <source srcset="./images2/5-tablet-min.jpg 1x, ./images2/5-tablet-2x-min.jpg 2x" media="(min-width: 768px)"
+                                        sizes="(min-width: 768px) 354px, 100vw" />
+                                    <source srcset="./images2/5-mob-min.jpg 1x, ./images2/5-mob-2x-min.jpg 2x" media="(min-width: 480px)"
+                                        sizes="(min-width: 480px) 450px, 100vw" />
+                                    <img src="./images2/5.jpg" alt="Проект" />
+                                </picture>
                                 <p class="portfolio-menu__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p> 
                             </div>                            
                             <div class="portfolio-menu__text-div">
@@ -110,7 +185,15 @@
                     <li class="portfolio-menu__item">
                         <a href="" class="portfolio-menu__link">
                             <div class="portfolio-menu__overlay">
-                                <img src="images2/6.jpg" alt="Вдохновение" width="370" height="294" class="portfolio-menu__img">
+                                <picture class="portfolio-menu__img">
+                                    <source srcset="./images2/6.jpg 1x, ./images2/6-2x-min.jpg 2x" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 270px, 100vw" />
+                                    <source srcset="./images2/6-tablet-min.jpg 1x, ./images2/6-tablet-2x-min.jpg 2x" media="(min-width: 768px)"
+                                        sizes="(min-width: 768px) 354px, 100vw" />
+                                    <source srcset="./images2/6-mob-min.jpg 1x, ./images2/6-mob-2x-min.jpg 2x" media="(min-width: 480px)"
+                                        sizes="(min-width: 480px) 450px, 100vw" />
+                                    <img src="./images2/6.jpg" alt="Вдохновение" />
+                                </picture>
                                 <p class="portfolio-menu__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p> 
                             </div>                            
                             <div class="portfolio-menu__text-div">
@@ -122,7 +205,15 @@
                     <li class="portfolio-menu__item">
                         <a href="" class="portfolio-menu__link">
                             <div class="portfolio-menu__overlay">
-                                <img src="images2/7.jpg" alt="Издание" width="370" height="294" class="portfolio-menu__img">
+                                <picture class="portfolio-menu__img">
+                                    <source srcset="./images2/7.jpg 1x, ./images2/7-2x-min.jpg 2x" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 270px, 100vw" />
+                                    <source srcset="./images2/7-tablet-min.jpg 1x, ./images2/7-tablet-2x-min.jpg 2x" media="(min-width: 768px)"
+                                        sizes="(min-width: 768px) 354px, 100vw" />
+                                    <source srcset="./images2/7-mob-min.jpg 1x, ./images2/7-mob-2x-min.jpg 2x" media="(min-width: 480px)"
+                                        sizes="(min-width: 480px) 450px, 100vw" />
+                                    <img src="./images2/7.jpg" alt="Издание" />
+                                </picture>
                                 <p class="portfolio-menu__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p> 
                             </div>                            
                             <div class="portfolio-menu__text-div">
@@ -134,7 +225,15 @@
                     <li class="portfolio-menu__item">
                         <a href="" class="portfolio-menu__link">
                             <div class="portfolio-menu__overlay">
-                                <img src="images2/8.jpg" alt="Проект" width="370" height="294" class="portfolio-menu__img">
+                                <picture class="portfolio-menu__img">
+                                    <source srcset="./images2/8.jpg 1x, ./images2/8-2x-min.jpg 2x" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 270px, 100vw" />
+                                    <source srcset="./images2/8-tablet-min.jpg 1x, ./images2/8-tablet-2x-min.jpg 2x" media="(min-width: 768px)"
+                                        sizes="(min-width: 768px) 354px, 100vw" />
+                                    <source srcset="./images2/8-mob-min.jpg 1x, ./images2/8-mob-2x-min.jpg 2x" media="(min-width: 480px)"
+                                        sizes="(min-width: 480px) 450px, 100vw" />
+                                    <img src="./images2/8.jpg" alt="Проект" />
+                                </picture>
                                 <p class="portfolio-menu__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p> 
                             </div>                            
                             <div class="portfolio-menu__text-div">
@@ -146,7 +245,15 @@
                     <li class="portfolio-menu__item">
                         <a href="" class="portfolio-menu__link">
                             <div class="portfolio-menu__overlay">
-                                <img src="images2/9.jpg" alt="Бизнес" width="370" height="294" class="portfolio-menu__img">
+                                <picture class="portfolio-menu__img">
+                                    <source srcset="./images2/9.jpg 1x, ./images2/9-2x-min.jpg 2x" media="(min-width: 1200px)"
+                                        sizes="(min-width: 1200px) 270px, 100vw" />
+                                    <source srcset="./images2/9-tablet-min.jpg 1x, ./images2/9-tablet-2x-min.jpg 2x" media="(min-width: 768px)"
+                                        sizes="(min-width: 768px) 354px, 100vw" />
+                                        <source srcset="./images2/9-mob-min.jpg 1x, ./images2/9-mob-2x-min.jpg 2x" media="(min-width: 480px)"
+                                        sizes="(min-width: 480px) 450px, 100vw" />
+                                    <img src="./images2/9.jpg" alt="Бизнес" />
+                                </picture>
                                 <p class="portfolio-menu__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p> 
                             </div>
                             <div class="portfolio-menu__text-div">
