@@ -54,8 +54,9 @@
                     </ul>
                 </nav>
                 <ul class="mob-contacts">
-                    <li class="mob-contacts__item"><a href="maiilto:info@devstudio.com" class="mob-contacts__link">info@devstudio.com</a></li>
-                    <li class="mob-contacts__item"><a href="tel:+380961111111" class="mob-contacts__link">+38 096 111 11 11</a></li>
+                    <li class="mob-contacts__item"><a href="tel:+380961111111" class="mob-contacts__link mob-contacts__link--tel">+38 096 111 11 11</a></li>
+                    <li class="mob-contacts__item"><a href="maiilto:info@devstudio.com" class="mob-contacts__link mob-contacts__link--mail">info@devstudio.com</a></li>
+                    
                 </ul>
                 <ul class="mobile-contact__list">
                     <li class="mobile-contact__item"><a href="" class="mobile-contact__link">Instagram</a></li>
@@ -71,7 +72,7 @@
         <section class="main">
             <div class="container">
                 <h1 class="main__top-text">Эффективные решения <br>для вашего бизнеса</h1>
-                <button class="main__btn"data-modal-open>Заказать услугу</button>
+                <button class="main__btn" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!-- DETAILS -->
@@ -124,24 +125,21 @@
                 <ul class="employment__list">
                     <li class="employment__item">
                         <picture class="team__img">
-                            <source srcset="./images/1.jpg 1x, ./images/1-2x.jpg 2x" media="(min-width: 1200px)"
-                                sizes="(min-width: 1200px) 370px, 100vw" />
+                            <source srcset="./images/1.jpg 1x, ./images/1-2x.jpg 2x" media="(min-width: 1200px)" />
                                 <img src="./images/1.jpg" alt="программирование" class="employment__img" width="370">
                         </picture>
                         <p class="employment__text">Десктопные приложения</p>
                     </li>
                     <li class="employment__item" >
                         <picture class="team__img">
-                            <source srcset="./images/2.jpg 1x, ./images/2-2x.jpg 2x" media="(min-width: 1200px)"
-                                sizes="(min-width: 1200px) 370px, 100vw" />
+                            <source srcset="./images/2.jpg 1x, ./images/2-2x.jpg 2x" media="(min-width: 1200px)" />
                             <img src="./images/2.jpg" alt="программирование" class="employment__img" width="370">
                         </picture>
                         <p class="employment__text">Мобильные приложения</p>
                     </li>
                     <li class="employment__item">
                         <picture class="team__img">
-                            <source srcset="./images/3.jpg 1x, ./images/3-2x.jpg 2x" media="(min-width: 1200px)"
-                                sizes="(min-width: 1200px) 370px, 100vw" />
+                            <source srcset="./images/3.jpg 1x, ./images/3-2x.jpg 2x" media="(min-width: 1200px)" />
                             <img src="./images/3.jpg" alt="программирование" class="employment__img" width="370">
                         </picture>
                         <p class="employment__text">Дизайнерские решения</p>
@@ -157,9 +155,9 @@
                     <li class="team__item">
                         <picture class="team__img">
                             <source srcset="./images/demyanenko.jpg 1x, ./images/demyanenko-2x-min.jpg 2x"
-                            media="(min-width: 1200px)" sizes="(min-width: 1200px) 270px, 100vw"/>
-                            <source srcset="./images/demyanenko-tablet-min.jpg 1x, ./images/demyanenko-tablet-2x-min.jpg 2x" media="(min-width: 768px)" sizes="(min-width: 768px) 354px, 100vw" />
-                            <source srcset="./images/demyanenko-mob-min.jpg 1x, ./images/demyanenko-mob-2x-min.jpg 2x" media="(min-width: 480px)" sizes="(min-width: 480px) 450px, 100vw"/>
+                            media="(min-width: 1200px)" />
+                            <source srcset="./images/demyanenko-tablet-min.jpg 1x, ./images/demyanenko-tablet-2x-min.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/demyanenko-mob-min.jpg 1x, ./images/demyanenko-mob-2x-min.jpg 2x" media="(min-width: 480px)" />
                             <img src="./images/demyanenko-mob-min.jpg" alt="Игорь Демьяненко" />
                         </picture>
                         <h3 class="team__member-name">Игорь Демьяненко</h3>
@@ -197,12 +195,10 @@
                     </li>
                     <li class="team__item">
                         <picture class="team__img">
-                            <source srcset="./images/repina.jpg 1x, ./images/repina-2x-min.jpg 2x" media="(min-width: 1200px)"
-                                sizes="(min-width: 1200px) 270px, 100vw" />
+                            <source srcset="./images/repina.jpg 1x, ./images/repina-2x-min.jpg 2x" media="(min-width: 1200px)"/>
                             <source srcset="./images/repina-tablet-min.jpg 1x, ./images/repina-tablet-2x-min.jpg 2x"
-                                media="(min-width: 768px)" sizes="(min-width: 768px) 354px, 100vw" />
-                                <source srcset="./images/repina-mob-min.jpg 1x, ./images/repina-mob-2x-min.jpg 2x" media="(min-width: 480px)"
-                                    sizes="(min-width: 480px) 450px, 100vw" />
+                                media="(min-width: 768px)" />
+                                <source srcset="./images/repina-mob-min.jpg 1x, ./images/repina-mob-2x-min.jpg 2x" media="(min-width: 480px)" />
                             <img src="./images/repina-mob-min.jpg" alt="Ольга Репина" />
                         </picture>
                         <h3 class="team__member-name">Ольга Репина</h3>
@@ -240,12 +236,9 @@
                     </li>
                     <li class="team__item">
                         <picture class="team__img">
-                            <source srcset="./images/tarasov.jpg 1x, ./images/tarasov-2x-min.jpg 2x" media="(min-width: 1200px)"
-                                sizes="(min-width: 1200px) 270px, 100vw" />
-                            <source srcset="./images/tarasov-tablet-min.jpg 1x, ./images/tarasov-tablet-2x-min.jpg 2x" media="(min-width: 768px)"
-                                sizes="(min-width: 768px) 354px, 100vw" />                            
-                            <source srcset="./images/tarasov-mob-min.jpg 1x, ./images/tarasov-mob-2x-min.jpg 2x" media="(min-width: 480px)"
-                                sizes="(min-width: 480px) 450px, 100vw" />
+                            <source srcset="./images/tarasov.jpg 1x, ./images/tarasov-2x-min.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/tarasov-tablet-min.jpg 1x, ./images/tarasov-tablet-2x-min.jpg 2x" media="(min-width: 768px)"/>                            
+                            <source srcset="./images/tarasov-mob-min.jpg 1x, ./images/tarasov-mob-2x-min.jpg 2x" media="(min-width: 480px)" />
                                 <img src="./images/tarasov-mob-min.jpg" alt="Николай Тарасов" />
                         </picture>
                         <h3 class="team__member-name">Николай Тарасов</h3>
@@ -283,12 +276,10 @@
                     </li>
                     <li class="team__item">
                         <picture class="team__img">
-                            <source srcset="./images/ermakov.jpg 1x, ./images/ermakov-2x-min.jpg 2x" media="(min-width: 1200px)"
-                                sizes="(min-width: 1200px) 270px, 100vw" />
+                            <source srcset="./images/ermakov.jpg 1x, ./images/ermakov-2x-min.jpg 2x" media="(min-width: 1200px)" />
                             <source srcset="./images/ermakov-tablet-min.jpg 1x, ./images/ermakov-tablet-2x-min.jpg 2x"
-                                media="(min-width: 768px)" sizes="(min-width: 768px) 354px, 100vw" />
-                            <source srcset="./images/ermakov-mob-min.jpg 1x, ./images/ermakov-mob-2x-min.jpg 2x" media="(min-width: 480px)"
-                                sizes="(min-width: 480px) 450px, 100vw" />
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/ermakov-mob-min.jpg 1x, ./images/ermakov-mob-2x-min.jpg 2x" media="(min-width: 480px)"/>
                             <img src="./images/ermakov-mob-min.jpg" alt="Михаил Ермаков" />
                         </picture>
                         <h3 class="team__member-name">Михаил Ермаков</h3>

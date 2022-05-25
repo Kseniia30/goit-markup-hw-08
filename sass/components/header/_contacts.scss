@@ -4,10 +4,11 @@
         display: block;
         padding-top: 21px;
         padding-bottom: 21px;
+        margin-left: auto;
     }
     
     @media screen and (min-width: 1200px) {
-        display: inline-flex;
+        display: flex;
         padding-top: 0;
         padding-bottom: 0;
     }

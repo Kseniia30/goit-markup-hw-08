@@ -8,6 +8,11 @@
     justify-content: space-between;
 
     @media screen and (min-width: 768px) {
+        justify-content: left;
         align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        
     }
 }

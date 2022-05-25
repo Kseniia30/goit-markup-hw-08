@@ -26,6 +26,9 @@
     color: $main-text-color;
     padding-top: 32px;
     padding-bottom: 32px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &--active {
         color: $link;
@@ -51,5 +54,8 @@
     @media screen and (min-width: 1200px) {
         font-size: 14px;
         line-height: 1.14;
+    }
+    &:hover, &:focus {
+        color: $link;
     }
 }
